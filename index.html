@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+  <title>Your Name</title>
+</head>
+
+<style>
+  body{
+    font-family: 'Potta One', cursive;  /* Custom Font Family. Applying it body will make it act as default font for entire website */
+  }
+
+  .div1{
+    height: 230px;
+    width: 250px;
+    background: linear-gradient(30deg, rgba(252, 214, 38, 1.0), rgb(252, 135, 203));  /* degree , color1, color2 */
+    color: white;
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;   /* Aligns text horizontally according to given value */
+    box-shadow: 0px 0px 15px 5px rgba(0, 102, 255, 0.534); /* x-displacement, y-displacement, blur, spread, color */
+  }
+
+  .div2{
+    height: 230px;
+    width: 250px;
+    background: radial-gradient(circle, rgb(255, 251, 0), rgb(255, 0, 0));
+    color: white;
+    padding-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 8px; /* Can be used to curve edges of box */
+  }
+
+  .text{
+    margin-top: 50px;
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(40deg,rgba(255, 0, 0, 0.829),rgb(85, 85, 255) 20%);
+    -webkit-background-clip: text;
+  }
+
+  .overflow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .overflow1{
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
+    overflow: hidden;  /* will hide extra text */
+    font-family: sans-serif;
+  }
+
+  .overflow2{
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
+    overflow: visible;  /* visible will show overflow if any */
+    font-family: sans-serif;
+  }
+
+  .overflow3{
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
+    overflow: auto;  /* auto will add scroll bar if needed and else there will be no scroll bar */
+    font-family: sans-serif;
+  }
+  
+  .image{
+    margin-top: 200px;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%; /* can be specified in pixels as well according to requirements */
+  }
+
+  .button1{
+    margin: 100px;
+    display: block;  /* button has default display as inline so to show it on new line make its display block */
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700; /* font weight is used to change style of your font.i.e.. bold,bolder,italic etc*/ 
+    background-color: rgb(168, 161, 161);
+    border-radius: 7px;
+    border: none;
+    color : white;
+    transition: 0.3s; /* This is time for our hover effect to have better animation without this effect will be too sudden */
+  }
+
+  .button1:hover{
+    background-color: rgb(197, 197, 197);
+    color: black;
+    transform: scale(1.02);  /* This will make entire button 1.02 times its original size */
+  }
+
+  .button1:focus{
+    outline: none;
+  }
+
+  .note{
+    font-size: 18px;
+  }
+  
+</style>
+<body>
+
+  <div class="div1">Linear gradient</div>
+  <div class="div2">Radial gradient</div>
+<<<<<<< HEAD
+  <div class="text">Akash Saxena</div> <!--Username-->
+=======
+  <div class="text">Akash Saxena</div> <!-- Name -->
+>>>>>>> cea446b227886fba80c278831ceb5c2658935146
+
+  <div class="overflow">
+    <div class=overflow1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fuga error libero perferendis ab iste ducimus! Repellendus optio temporibus cupiditate facilis et vitae unde excepturi suscipit placeat. Ipsam fuga in quam nisi quidem magnam vero blanditiis necessitatibus impedit, aspernatur ratione suscipit reprehenderit labore? Impedit ea assumenda rerum tempore? Suscipit illum vel voluptatem voluptates ducimus soluta, nobis, eos fugiat magni esse quisquam qui sapiente animi nostrum quasi laborum rem commodi delectus?</div>
+    <div class="overflow2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci nesciunt quae soluta consectetur architecto asperiores eligendi doloremque dignissimos accusantium aperiam natus molestias cumque dicta illo, ratione optio quos commodi numquam! Accusantium dolores quod porro tempore delectus sequi. Quis, quaerat nihil ab iste autem temporibus modi provident hic commodi cupiditate voluptatem veniam. Ab sunt molestias assumenda. Voluptate, odit iusto ad vitae et eveniet, nihil explicabo nemo illo labore quis earum!</div>
+    <div class="overflow3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae exercitationem, culpa id eveniet sapiente unde iure totam aperiam vitae molestias accusamus, enim nisi perspiciatis. Quia non culpa consectetur enim. Quibusdam voluptates, voluptatum tempora est in quam necessitatibus. Saepe minus, sapiente quasi quam commodi nulla voluptatibus, impedit veritatis, magnam enim suscipit officia totam? Eligendi voluptates nostrum, enim aspernatur maiores distinctio odit adipisci molestias itaque error! Itaque alias eos beatae ipsam nisi!</div>
+  </div>
+
+
+  <img class="image" src="https://t7-live-ahsd8.nyc3.cdn.digitaloceanspaces.com/animalhumanesociety.org/files/styles/scale_width_960/flypub/media/image/2019-05/Puppy.jpg?itok=97sYF94R">
+
+  <button class="button1">Hover over me</button>
+
+
+  <div class="note">To read about display properties try MDN and W3schools. links : -  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="blank">MDN</a> and <a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="blank">W3Schools</a> P.S. Read W3schools first</div>  
+
+  <div class="note">To read about position properties visit MDN and W3schools. links : -  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="blank">MDN</a> and <a href="https://www.w3schools.com/cssref/pr_class_position.asp" target="blank">W3Schools</a> P.S. MDN explaination is better</div>
+</body>
+</html>
